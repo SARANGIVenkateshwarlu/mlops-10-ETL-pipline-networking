@@ -1,0 +1,12 @@
+python-dotenv
+pandas
+numpy
+requests
+pymangodb
+flask
+flask-cors
+pytest
+pytest-cov
+
+
+
