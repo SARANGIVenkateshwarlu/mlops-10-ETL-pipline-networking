@@ -1,0 +1,573 @@
+
+
+About setup.py/Exception/Logging folders -intiations
+...
+Hello guys.
+
+So we are going to continue the discussion with respect to our end to end project.
+
+Already in our previous video, we have done this entire setup.py file.
+
+We have written the code.
+
+Now we are going to focus on creating our logging pipeline.
+
+So first of all, we'll go ahead and set up our logging pipeline.
+
+And then we'll go ahead with the exception pipeline.
+
+So inside this logging pipeline already my underscore underscore init underscore underscore dot pi file
+
+is there.
+
+So this will also be created as a package.
+
+So here I'm actually going to create a file which is like logger dot pi.
+
+Now after I create our logger dot pi file I am just going to go ahead and copy some important information
+
+over here with respect to the code.
+
+So first of all I'm going to go ahead and import logging.
+
+And here I'm going to probably go ahead and give my logging configuration.
+
+You know and this is really important because with respect to every execution of our modules, it is
+
+always necessary that we try to log some information so that if there is an error that comes, we will
+
+be able to debug it very much in a very easy way.
+
+Right.
+
+Then we are going to import OS and then from date time I'm going to import date time.
+
+Okay.
+
+So this will also be imported.
+
+Okay.
+
+Then I'm going to go ahead and create my log file format.
+
+So let's say my log file format will be I'll be using a F string over here.
+
+And this will basically use like date time dot now okay.
+
+Date time dot now.
+
+And here I will be using some time stamp like kind of thing str f of time and some time format.
+
+Let's say the first one will be nothing.
+
+But with respect to my month, my day year okay, so this will basically be the format that we are going
+
+to use it.
+
+And I'm going to use underscore underscore in between so that, you know, you'll be able to see in
+
+that same way, right, how your file should basically look like.
+
+So percentile and percentile d percentile y.
+
+And let's say I'm also going to use percentile h underscore hour.
+
+Then it should be coming with my uh sorry minutes.
+
+And then I will also go ahead and write my seconds.
+
+Okay.
+
+And this will be my log file.
+
+That will be the name that I'm actually going to use for this entire log file.
+
+And this will basically be present inside.
+
+Sorry.
+
+This bracket should be inside over here.
+
+So that will be my log file that I'm going to probably create.
+
+So this will basically be my entire log file file name okay.
+
+And with respect to the log file name I will also go ahead and create some log path where it should
+
+probably create the logs.
+
+So here I'm going to write OS dot path dot join.
+
+And here I'm going to write OS dot get cw d get current current working directory.
+
+And then I'm going to basically go ahead and execute.
+
+I'll create a folder called as logs.
+
+And this logs folder.
+
+Also you'll be able to see it once I probably execute this you will be able to see that logs folder
+
+also getting created right.
+
+And then I will also go ahead and mention my log file okay.
+
+So this is the logs path that I'm actually going to create.
+
+And then I will go ahead and write OS dot make directory.
+
+Okay.
+
+Make dir says okay.
+
+And this will basically create my um, the log directory itself.
+
+And I'll say hey exist.
+
+If it exists then do not create it again.
+
+Okay.
+
+So that is the reason we say it as exist underscore okay is equal to true.
+
+And then finally I will go ahead and create one more variable like log underscore file underscore path.
+
+And here I'm going to define my own dot path dot join.
+
+And finally you'll be able to see that I'll give my logs path along with my log file.
+
+Right.
+
+So this will basically be my total path that you will be able to see.
+
+Right.
+
+Once with the logs path and what file I really want to create, this file will be basically getting
+
+the recent date time, uh, format.
+
+And that will be the name that will be present in this particular file itself.
+
+Right.
+
+And finally, uh, if you know some basic idea of logging, uh, if you have learned this in Python,
+
+we basically go ahead and set up our basic configuration file name will be nothing, but it will be
+
+log file.
+
+Then we keep a format of our asset time line number.
+
+We provide this information right.
+
+This basic information is required with respect to the line number.
+
+Then we have this name level name and message okay.
+
+So these all are my basic information.
+
+And here the level that we are going to basically say is that Logging.info I can also set this up to
+
+logging dot error.
+
+It can be different different information.
+
+But since my logging.info all the information I specifically want, I'm keeping it as logging.info itself.
+
+Right?
+
+So perfect.
+
+This is about my logging details.
+
+Now what I can actually do is that I can import this logger.py file and I can call, you know, with
+
+respect to this logging itself, right, to log any details that I really want.
+
+If I just go ahead and write logging.info with the kind of message that I really want, it will be able
+
+to log each and everything.
+
+Right?
+
+So this is the basic logging fundamentals, and here is the entire configuration that I have set up
+
+in this particular file right now.
+
+Coming to the next one that is called as exception.
+
+So here also I will go ahead and set up my exception dot p y.
+
+So let's go ahead and do this, because whenever we face any exception, we should be able to create
+
+our own custom exception to handle it okay.
+
+So for that I will be writing this particular code.
+
+Please focus on this code.
+
+So here what I'm doing is that I'm creating a class which is called as Network Security Exception.
+
+Here is my init method where we are taking two values like error message and error details which is
+
+coming from system.
+
+So that is the reason we have imported system over here.
+
+And we are taking three information.
+
+This two information is not required.
+
+The third information which talks about our execution underscore DB which gives our entire execution
+
+details the error details.
+
+So that is the reason we are writing error underscore details dot x x underscore info.
+
+This error details is basically coming as a cis parameter right.
+
+It is a type of cis basically from the system itself.
+
+Right.
+
+Then my line number will be available inside this particular variable.
+
+So I'm using this line number.
+
+Even my file name will be available inside this particular variable x underscore TB dot tb dot frame
+
+f dot f underscore code underscore file underscore name.
+
+So these are some basic information that you should definitely know related to exception.
+
+And these are the internal details with respect to the exception that you really have.
+
+So this class will basically raise our custom exception.
+
+Right then we are also overriding one functionality that is underscore underscore str.
+
+Just saying that hey error occurred in this Python script.
+
+Uh line number and error message.
+
+Right.
+
+And format I'm just going to use my file name, line number and whatever error message that we are facing.
+
+Right.
+
+So let's try this out and let's see whether it is working or not.
+
+Now I also want to make sure that I probably do some kind of logging over here.
+
+Right.
+
+So logging is also required.
+
+Right.
+
+So what I am actually going to do is that I'm going to go ahead and write from network security.
+
+I'll import the logging part.
+
+Also see logging is basically present over here.
+
+Right.
+
+So if I say from network security dot logging I'm going to import logger.
+
+Right.
+
+So here I will go ahead and write network security dot if I go ahead and see logging?
+
+If I go ahead and write, logging is my folder right?
+
+I'm going to import logger.
+
+Right.
+
+So logger is over here.
+
+I will also go ahead and write this particular try catch block right.
+
+So I also want to check whether logging is working.
+
+We're just testing to check both logging and exception should work right.
+
+So here if underscore underscore name is equal to underscore underscore main try this okay.
+
+So here I will say um log logger logger.info.
+
+Let's see what is the function inside this.
+
+So if I say logger dot logger.
+
+So this is my entire logger.py file.
+
+Right now if I really want to use the logs how do I write it down.
+
+So I can just go ahead and write logger dot and see which function is basically available over here.
+
+Right.
+
+So if I go ahead and say logging see because logging is one variable over here.
+
+Right.
+
+Logging.
+
+Right.
+
+So logger dot logging logging and dot if I go ahead and write my info, write info and here I will say
+
+I'll just give some message.
+
+Enter the try block.
+
+Okay, let's see whether this log will be created or not.
+
+But the kind of operation that I'm trying is nothing but one divided by zero.
+
+And you know that this is if you just have a basic idea about, uh, you know, what is division by
+
+zero error, right?
+
+We will definitely face an error over here.
+
+And this is the prerequisite that is required at least some information about Python programming language.
+
+Right.
+
+So one divided by zero is nothing, but it is giving you an exception over here.
+
+And with respect to this particular exception here, you will be able to see that it is a division by
+
+zero error.
+
+Okay.
+
+So here you can see this will be not printed or this will not be printed obviously.
+
+And here I can say that, uh, this information will definitely not be printed because an exception
+
+is basically getting handled over here.
+
+We are raising an exception.
+
+We are catching this exception and we are raising it with the network security exception.
+
+Right.
+
+So guys now the code that I've actually written let's go ahead and check for logging and uh, exception
+
+handling whether it is working fine or not.
+
+Okay.
+
+So I'm just going to go ahead and open my terminal.
+
+Let me do one thing.
+
+Let me open my own command prompt.
+
+Always make sure that you have to be in the venv environment.
+
+Now just to check exception handling, I have to make sure that I have to run this file.
+
+Right exception.py.
+
+Now this exception.py is in which folder it is nothing but inside the exception folder, right?
+
+So what we are basically going to do is that first of all, I will go ahead and go to my network security
+
+folder.
+
+Right.
+
+So if you go ahead and see logging an exception is inside this network security folder.
+
+Right.
+
+So I will say hey CD network network security right.
+
+I'm going to go inside this particular folder and then I will go ahead inside my exception folder.
+
+After going inside my exception folder I will go ahead and write Python exception.py right.
+
+Now this is the first issue okay.
+
+I have got an issue and it is showing.
+
+Hey I'm getting an error in line 18.
+
+Okay, so exception is basically coming in line 18.
+
+What is that?
+
+Okay.
+
+In this particular line in my logger.logging.info only, I'm getting an exception.
+
+Even it did not go to this particular line.
+
+See as soon as I got error in this line you can see over here I am getting type error over here and
+
+it shows this exception message error occurred in Python script.
+
+So and so line number 18 and error message is int object is not callable.
+
+Okay.
+
+Now let's understand what is the mistake that we have done.
+
+Okay.
+
+Now I'm not going to edit this part because this is really important right.
+
+So I made one mistake.
+
+Instead of writing capital info I have to write small info.
+
+Now this should be running fine.
+
+Okay, now I fix this exception.
+
+Okay, but what about the next exception?
+
+So here initially we got this exception.
+
+It came outside of this and it caught.
+
+It was caught by our network security exception class that we have defined.
+
+And this is our own custom exception that we have defined right.
+
+Now let's go ahead and run this.
+
+Okay.
+
+If I go ahead and run Python exception dot p y.
+
+Now you can see that I'm getting a division zero by error.
+
+Now, with respect to this division zero by error, I can see that error occurred in this particular
+
+file name.
+
+And all the things is basically there and it is nothing, but it is also displaying the error message
+
+how this is getting displayed.
+
+Because we have written a custom function over here.
+
+Right.
+
+So that to display whenever we get an exception, how the message needs to be displayed right now this
+
+is fine.
+
+That basically is my exception is basically getting handled.
+
+It is also raising.
+
+It is also displaying the proper message.
+
+But still we did not find out whether this logging info has been put up in form of some file.
+
+So here you can see in our exception folder there is one logs file.
+
+Now inside this logs file you will be able to see hey this is the information over here.
+
+Enter try block.
+
+And that is what we were trying to display it over here right now.
+
+The thing is that the logs folder has created inside this exception folder.
+
+Why?
+
+Because we are executing the code inside the exception folder.
+
+Right?
+
+We were trying to run this exception dot pi.
+
+And here you can see that this is the log file that is getting created.
+
+So both the functionality is working.
+
+It is not necessary that we always need to run the file inside the exception block.
+
+When we create our final project, we will be running the file outside this particular block, right?
+
+My training pipeline should get initiated from outside this project, and then it should probably go
+
+inside that.
+
+And wherever we are calling exception handling and logging we can basically use that.
+
+Okay.
+
+So right now everything is working fine.
+
+What I'm actually going to do is that since this logs folder is not required because when we work for
+
+the entire project, it will be created in the outside location.
+
+Okay.
+
+But here we have tested both the logging and exception is working absolutely fine.
+
+Okay.
+
+So this was our exception handling everything.
+
+As such, I will remove this code because we will not be running this particular code.
+
+If you want to run it, you can just go ahead and just write this particular code okay.
+
+So I'll just keep this and make sure that I'll commit this so that you can go ahead and check it out.
+
+Okay.
+
+Now uh, quickly I will do CD dot dot CD dot dot.
+
+I'll go back to my main parent folder and then let me just go ahead and commit this git add dot git
+
+commit minus m exception handling and logging completed.
+
+Okay.
+
+Then finally python sorry git push minus u from origin to main.
+
+So here you can see the entire pushes basically happen.
+
+Right now I can go ahead and check up in my GitHub.
+
+I think it should be there and it will be definitely there.
+
+That is the reason it is showing me successful.
+
+So I hope you like this particular video here.
+
+In this video we have discussed about both logging and exception, uh, the kind of code that I have
+
+written.
+
+I have also explained to you with respect to exception, this is the generic code that we basically
+
+write right with respect to the configuration.
+
+And it looks absolutely fine.
+
+And this is my, uh, normal exception.
+
+Remember how to probably import this, uh, and uh, how to probably use this entire logging in short.
+
+Right.
+
+So yes, this was it from my side.
+
+I will see you in the next video.
+
+Thank you.

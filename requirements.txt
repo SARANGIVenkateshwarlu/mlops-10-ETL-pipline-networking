@@ -8,6 +8,7 @@ flask-cors
 pytest
 pytest-cov
 setuptools
-
+pymongo
+# pip install --upgrade pymongo certifi (install in cmd for connecting to mongodb atlas)
 ## -e .
 

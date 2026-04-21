@@ -207,6 +207,15 @@ wheels = [
 ]
 
 [[package]]
+name = "dnspython"
+version = "1.16.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ec/c5/14bcd63cb6d06092a004793399ec395405edf97c2301dfdc146dfbd5beed/dnspython-1.16.0.zip", hash = "sha256:36c5e8e38d4369a08b6780b7f27d790a292b2b08eea01607865bf0936c558e01", size = 266364, upload-time = "2018-12-08T19:54:12.883Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ec/d3/3aa0e7213ef72b8585747aa0e271a9523e713813b9a20177ebe1e939deb0/dnspython-1.16.0-py2.py3-none-any.whl", hash = "sha256:f69c21288a962f4da86e56c4905b49d11aba7938d3d740e80d9e366ee4f1632d", size = 188353, upload-time = "2018-12-08T19:52:32.154Z" },
+]
+
+[[package]]
 name = "flask"
 version = "3.1.3"
 source = { registry = "https://pypi.org/simple" }
@@ -348,6 +357,7 @@ dependencies = [
     { name = "numpy" },
     { name = "pandas" },
     { name = "pymangodb" },
+    { name = "pymongo", extra = ["srv"] },
     { name = "pytest" },
     { name = "pytest-cov" },
     { name = "python-dotenv" },
@@ -362,6 +372,7 @@ requires-dist = [
     { name = "numpy", specifier = ">=2.4.4" },
     { name = "pandas", specifier = ">=3.0.2" },
     { name = "pymangodb", specifier = ">=0.1.1" },
+    { name = "pymongo", extras = ["srv"], specifier = "==3.12" },
     { name = "pytest", specifier = ">=9.0.3" },
     { name = "pytest-cov", specifier = ">=7.1.0" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
@@ -516,6 +527,17 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/10/a9/d0c80c6244041cb326b35c80734847a787481285bbd5346883dcd922fd8c/pymangodb-0.1.1.tar.gz", hash = "sha256:124ad70b77434c003abc181c5a3f9b8083123174494ff0383ac77e039484ce11", size = 6802, upload-time = "2025-06-04T22:00:18.713Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/11/22/792507791bcf7bbe9cb2d01fe5c19bc3deb26cbd24472769b33e53a294ee/pymangodb-0.1.1-py3-none-any.whl", hash = "sha256:ead04ab9422cf696f693bb741b6e830d72060b13d183d038f924a051a4c6b5b2", size = 6007, upload-time = "2025-06-04T22:00:17.389Z" },
+]
+
+[[package]]
+name = "pymongo"
+version = "3.12.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/38/f2/f3e8be03c9994354a5e6c542b6cd76550127f202fcc3a328e1324ee68317/pymongo-3.12.0.tar.gz", hash = "sha256:b88d1742159bc93a078733f9789f563cef26f5e370eba810476a71aa98e5fbc2", size = 818554, upload-time = "2021-07-13T23:11:18.936Z" }
+
+[package.optional-dependencies]
+srv = [
+    { name = "dnspython" },
 ]
 
 [[package]]

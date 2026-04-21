@@ -15,5 +15,5 @@ dependencies = [
     "python-dotenv>=1.2.2",
     "requests>=2.33.1",
     "setuptools>=70.0.0",
-    
+    "pymongo[srv]==3.12",
 ]
