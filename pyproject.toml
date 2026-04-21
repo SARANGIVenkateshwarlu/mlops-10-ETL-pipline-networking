@@ -1,12 +1,19 @@
 [project]
-name = "mlops-10-etl-pipline-networking"
+name = "mlops-10-etl-pipeline-networking"
 version = "0.1.0"
-description = "Add your description here"
+description = "Sarangi_V"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "flask>=3.1.3",
+    "flask-cors>=6.0.2",
     "numpy>=2.4.4",
     "pandas>=3.0.2",
+    "pymangodb>=0.1.1",
+    "pytest>=9.0.3",
+    "pytest-cov>=7.1.0",
     "python-dotenv>=1.2.2",
     "requests>=2.33.1",
+    "setuptools>=70.0.0",
+    
 ]
