@@ -9,6 +9,7 @@ pytest
 pytest-cov
 setuptools
 pymongo
+scikit-learn
 # pip install --upgrade pymongo certifi (install in cmd for connecting to mongodb atlas)
 ## -e .
 
