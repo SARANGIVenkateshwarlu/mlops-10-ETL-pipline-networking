@@ -4,6 +4,9 @@
 
 
 
+![alt text](asset\Data_ingestion_chart_1.png)
+
+
 
 ![alt text](asset\Data_ingestion_chart_2.png)
 
